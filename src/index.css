@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  padding-top: 40px;
+  background: #cbdbeb;
+}
+
+h1 {
+  /* font-size: 2.2em; */
+  line-height: 1.1;
+}
+
+button {
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  width: 100%;
+  border: 1px solid #213547;
+  color: #213547;
+  /* border-left: 0; */
+}
+button:hover {
+  background: #cbdbeb;
+}
+
+button:hover .candidateid-input {
+  border-color: #a3a6ce;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.candidate-score-percentile-calculator {
+  border: 1px solid #213547;
+  border-radius: 4px;
+  padding: 24px;
+  max-width: 625px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: white;
+  text-align: left;
+  /* justify-content: space-between; */
+}
+.candidateid-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 30px 0;
+}
+.candidateid-input-wrapper label {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #213547;
+  font-size: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.candidateid-input-box {
+  display: flex;
+}
+
+.candidateid-input-box:hover + button {
+  border-color: #646cff;
+}
+
+.candidateid-input-box:hover + .candidateid-input {
+  border-color: #646cff;
+}
+.candidateid-input {
+  border-radius: 0;
+  border: 1px solid #213547;
+  border-right: 0;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  width: auto;
+}
+
+.percentile-results {
+  text-align: left;
+}
+
+.percentile-results-table {
+  text-align: left;
+  border: 1px solid #213547;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.percentile-results-table th {
+  /* color: white; */
+  /* border-bottom: 1px solid grey; */
+  border-bottom: 1px solid #213547;
+  background: #cbdbeb;
+}
+
+.percentile-results-table td,
+.percentile-results-table th {
+  padding: 5px;
+  /* text-align: center; */
+
+  border-right: 1px solid #213547;
+}
+
+.percentile-results-table td {
+  /* font-size: 36px; */
+  /* background: #e9ecff; */
+  /* border-right: 2px solid white; */
+  /* padding-top: 2px; */
+  /* padding-bottom: 2px; */
+}
+
+.error-msg {
+  color: red;
+  font-size: 14px;
+  text-align: left;
+}
+
+.instructions {
+  text-align: left;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: white;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .percentile-results-table {
+    border-color: #1a1a1a;
+  }
+  .percentile-results-table th {
+    background: #1a1a1a;
+  }
+}
