@@ -39,7 +39,6 @@ body {
 }
 
 h1 {
-  /* font-size: 2.2em; */
   line-height: 1.1;
 }
 
@@ -79,7 +78,6 @@ button:focus-visible {
   align-items: stretch;
   background: white;
   text-align: left;
-  /* justify-content: space-between; */
 }
 .candidateid-input-wrapper {
   display: flex;
@@ -130,8 +128,6 @@ button:focus-visible {
 }
 
 .percentile-results-table th {
-  /* color: white; */
-  /* border-bottom: 1px solid grey; */
   border-bottom: 1px solid #213547;
   background: #cbdbeb;
 }
@@ -142,14 +138,6 @@ button:focus-visible {
   /* text-align: center; */
 
   border-right: 1px solid #213547;
-}
-
-.percentile-results-table td {
-  /* font-size: 36px; */
-  /* background: #e9ecff; */
-  /* border-right: 2px solid white; */
-  /* padding-top: 2px; */
-  /* padding-bottom: 2px; */
 }
 
 .error-msg {
@@ -177,10 +165,13 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: dark) {
-  .percentile-results-table {
-    border-color: #1a1a1a;
+  body {
+    color: #213547;
   }
-  .percentile-results-table th {
-    background: #1a1a1a;
+
+  input,
+  button {
+    background: white;
+    color: #213547;
   }
 }
